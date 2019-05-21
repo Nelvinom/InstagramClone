@@ -1,17 +1,13 @@
-# Project Title
+# InstagramClone
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+A cloned version of popular photo-gallery website instagram.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+sudo apt-get install python3.6.
 ```
 
 ### Installing
@@ -21,67 +17,59 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-Give the example
+pip install virtualenv
 ```
 
-And repeat
+Then activate
 
 ```
-until finished
+source virtual/bin/activate
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+8rejsjh-8hsj0
+Install pip
 
 ```
-Give an example
+sudo apt install python3-pip
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+```
+pip install django==1.11
+```
 
 ```
-Give an example
+cd to the dir you cloned the repository
 ```
+
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+In order to deploy the following files must be created assuming you have set heroku:
+
+* Add a `procfile` in the project root.
+* Add `requirement.txt` file with all the requirements in the project root;
+* Add `Gunicorn` to `requirements.txt`;
+* A `runtime.txt` to specify the correct Python version in the project root;
+* Configure `whitenoise` to serve static files.
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Django](https://docs.djangoproject.com/en/2.2/) - The web framework used
+* [Python3.6](https://docs.python.org/3/) - Dependency Language
+* [Postgres](https://www.postgresql.org/docs/10/tutorial-inheritance.html) - Used to store data
+* [Heroku](https://devcenter.heroku.com/categories/reference) - To deploy the application
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Oruko Pius** 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [license.md](license.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Used LMS for the sole reference
+* StackOverflow
